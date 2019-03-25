@@ -16,6 +16,8 @@ echo "$BREW_PACKAGES"
 
 brew install $BREW_PACKAGES
 
+brew tap homebrew/cask-versions
+
 #install cask packages
 CASK_PACKAGES=$(curl -fsSL https://raw.githubusercontent.com/retbrown/mac-bootstrap/master/homebrew-cask)
 echo "$CASK_PACKAGES"
